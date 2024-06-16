@@ -21,7 +21,7 @@ pipeline {
                     def classpath= "classes;lib/; /eclipse/plugins/junit-platform-console-standalone-1.7.1.jar"
                 }
                 // JUnit 5 테스트 실행
-                bat 'java -cp classes;lib/; /eclipse/plugins/junit-platform-console-standalone-1.7.1.jar --scan-classpath> test_results.txt'           
+                bat 'java -cp classes;lib/; /eclipse/plugins/junit-platform-console-standalone-1.7.1.jar build/classes/java/test--scan-classpath> test_results.txt'           
             }
         }
     } 
