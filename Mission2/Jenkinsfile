@@ -21,7 +21,7 @@ pipeline {
                     def classpath= "classes;lib/; path/to/eclipse/plugins/junit-platform-launcher_1.9.0.jar"
                 }
                 // JUnit 5 테스트 실행
-                bat 'java -cp classes;lib/; path/to/eclipse/plugins/junit-platform--launcher_1.9.0.jar --scan-classpath> test_results.txt'           
+                bat 'java -cp classes;lib/; path/to/eclipse/plugins/junit-platform-launcher_1.9.0.jar --scan-classpath> test_results.txt'           
             }
         }
     } 
